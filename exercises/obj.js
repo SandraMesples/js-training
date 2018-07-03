@@ -7,7 +7,13 @@
  * @notions Functions, Operators
  */
 
-// Your code :
+// Your code : 
+let obj = new Object();
+
+obj.str = '1337';
+obj.num = 42;
+obj.bool = false;
+obj.undef = undefined;
 
 //* Begin of tests
 const assert = require('assert')
@@ -25,4 +31,4 @@ assert.strictEqual(obj.bool, false)
 
 assert.strictEqual(typeof obj.undef, 'undefined')
 assert.strictEqual(obj.undef, undefined)
-// End of tests */
+    // End of tests */

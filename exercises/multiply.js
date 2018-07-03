@@ -10,6 +10,31 @@
 
 // Your code :
 
+function multiply(arg1, arg2) {
+    var i = 0;
+    var total = 0;
+    if (arg1 === 0 || arg2 === 0) {
+        return 0;
+    } else if (arg1 > 0) {
+        while (i < arg1) {
+            total += arg2;
+            i++;
+        }
+        return total;
+    } else if (arg2 > 0) {
+        while (i < arg2) {
+            total += arg1;
+            i++;
+        }
+        return total;
+    } else {
+        while (i < Math.abs(arg1)) {
+            total += Math.abs(arg2);
+            i++
+        }
+        return Math.abs(total);
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
@@ -25,4 +50,4 @@ assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
-// End of tests */
+    // End of tests */

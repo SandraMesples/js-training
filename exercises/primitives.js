@@ -8,6 +8,10 @@
  */
 
 // Your code :
+var str = '1337';
+var num = 42;
+var bool = false;
+var undef = undefined;
 
 
 //* Begin of tests
@@ -24,4 +28,4 @@ assert.strictEqual(bool, false)
 
 assert.strictEqual(typeof undef, 'undefined')
 assert.strictEqual(undef, undefined)
-// End of tests */
+    // End of tests */

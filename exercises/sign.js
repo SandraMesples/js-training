@@ -11,6 +11,17 @@
  */
 
 // Your code :
+function sign(a) {
+    if (a > 0) {
+        return (1)
+    }
+    if (a < 0) {
+        return (-1)
+    }
+    if (a === 0) {
+        return (0)
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -23,4 +34,4 @@ assert.strictEqual(sign(-2), -1)
 assert.strictEqual(sign(10), 1)
 assert.strictEqual(sign(0), 0)
 assert.strictEqual(sign(132), 1)
-// End of tests */
+    // End of tests */

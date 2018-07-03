@@ -12,9 +12,29 @@
  *
  */
 
+function keepFirst(arg) {
+    return arg.substring(0, 2);
+}
+
+function keepLast(arg) {
+    return arg.substring(arg.length - 2, arg.length);
+}
+
+function keepFirstLast(arg) {
+    return arg.substring(2, 4)
+}
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(keepFirst.length, 1)
+assert.strictEqual(keepFirst("Hello"), "He")
+assert.strictEqual(typeof keepLast, 'function')
+assert.strictEqual(keepLast.length, 1)
+assert.strictEqual(keepLast("Hello"), "lo")
+assert.strictEqual(typeof keepFirstLast, 'function')
+assert.strictEqual(keepFirstLast.length, 1)
+assert.strictEqual(keepFirstLast("Hello"), "ll")
 
-assert.fail('You must write your own tests')
+
 // End of tests */

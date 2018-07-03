@@ -7,6 +7,10 @@
  *
  */
 
+function capitalize(arg) {
+    return arg.charAt(0).toUpperCase() + arg.slice(1).toLowerCase();
+
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -16,4 +20,4 @@ assert.strictEqual(capitalize('str'), 'Str')
 assert.strictEqual(capitalize('qsdqsdqsd'), 'Qsdqsdqsd')
 assert.strictEqual(capitalize('STR'), 'Str')
 assert.strictEqual(capitalize('zapZAP'), 'Zapzap')
-// End of tests */
+    // End of tests */

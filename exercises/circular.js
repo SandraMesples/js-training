@@ -8,6 +8,9 @@
  */
 
 // Your code :
+let circular = new Object();
+
+circular.circular = circular;
 
 //* Begin of tests
 const assert = require('assert')
@@ -17,4 +20,4 @@ assert.strictEqual(circular.circular, circular)
 assert.strictEqual(circular.circular.circular, circular)
 assert.strictEqual(circular.circular.circular.circular, circular)
 assert.strictEqual(circular.circular.circular.circular.circular, circular)
-// End of tests */
+    // End of tests */

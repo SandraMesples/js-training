@@ -8,6 +8,7 @@
  */
 
 // Your code :
+var escapeStr = "j'ai \"mangé\" un rat\`s \\ bonjour\/Salut "
 
 //* Begin of tests
 const assert = require('assert')
@@ -18,4 +19,4 @@ assert.strictEqual(escapeStr.includes('"'), true)
 assert.strictEqual(escapeStr.includes('`'), true)
 assert.strictEqual(escapeStr.includes('/'), true)
 assert.strictEqual(escapeStr.includes('\\'), true)
-// End of tests */
+    // End of tests */

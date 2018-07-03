@@ -8,6 +8,18 @@
  */
 
 // Your code :
+function sameSign(a, b) {
+    if (a < 0 && b < 0) {
+        return true;
+    } else if (a === b) {
+        return true;
+    } else if (a > 0 && b > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 //* Begin of tests
 const assert = require('assert')
@@ -23,4 +35,4 @@ assert.strictEqual(sameSign(-231, 1), false)
 assert.strictEqual(sameSign(-231, 0), false)
 assert.strictEqual(sameSign(0, 231), false)
 assert.strictEqual(sameSign(231, -233), false)
-// End of tests */
+    // End of tests */

@@ -8,6 +8,18 @@
  *
  */
 
+
+
+function repeat(mots, a) {
+    let phrase = '';
+    while (a != 0) {
+        phrase += mots;
+        a--;
+    }
+    return phrase;
+
+}
+
 //* Begin of tests
 const assert = require('assert')
 
@@ -19,4 +31,4 @@ assert.strictEqual(repeat('ba', 10), 'babababababababababa')
 assert.strictEqual(repeat('pouet', 2), 'pouetpouet')
 assert.strictEqual(repeat('haha', 1), 'haha')
 assert.strictEqual(repeat('hehehe', 0), '')
-// End of tests */
+    // End of tests */

@@ -10,6 +10,13 @@
  */
 
 // Your code :
+function max(a, b) {
+    if (a > b) {
+        return (a);
+    } else {
+        return (b);
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -22,4 +29,4 @@ assert.strictEqual(max(0, -2), 0)
 assert.strictEqual(max(-1, 10), 10)
 assert.strictEqual(max(-13.2, -222), -13.2)
 assert.strictEqual(max(132, 133), 133)
-// End of tests */
+    // End of tests */

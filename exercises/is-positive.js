@@ -8,7 +8,17 @@
  */
 
 // Your code:
-
+function isPositive(number) {
+    if (number > 0) {
+        return true;
+    }
+    if (number < 0) {
+        return false;
+    }
+    if (number === 0) {
+        return false;
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -21,4 +31,4 @@ assert.strictEqual(isPositive(-1), false)
 assert.strictEqual(isPositive(-0.7), false)
 assert.strictEqual(isPositive(-787823), false)
 assert.strictEqual(isPositive(0), false)
-// End of tests */
+    // End of tests */
